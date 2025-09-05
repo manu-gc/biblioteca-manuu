@@ -1,3 +1,4 @@
+/*Consulta 1: Mostrar todos os livros com o nome do autor e a categoria*/
 SELECT l.titulo, a.nome_autor, c.nome_categoria
 FROM livros l
 INNER JOIN autores a ON l.id_autor = a.id_autor
@@ -34,4 +35,5 @@ FROM livros l
 INNER JOIN autores a ON l.id_autor = a.id_autor
 INNER JOIN categorias c ON l.id_categoria = c.id_categoria
 WHERE a.nome_autor = 'Jorge Amado';
+
 
